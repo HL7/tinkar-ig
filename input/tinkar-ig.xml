@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="hl7.xprod.uv.tinkar"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="vocab"/> 
+  </extension> 
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/> 
+  </extension> 
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/> 
+  </extension>
+<!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
+    <valueString value="resources-spreadsheet.xml"/>
+  </extension>-->
+  <url value="http://hl7.org/xprod/ig/uv/tinkar/ImplementationGuide/hl7.xprod.uv.tinkar"/>
+  <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
+  <version value="2.0.0"/>
+  <name value="tinkar"/>
+  <title value="Standardized Terminology Knowledgebase Reference Model (Tinkar)"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / Terminology Infrastructure"/>
+  <contact>
+    <telecom>
+      <!-- Or whatever URL and/or email address(es) are appropriate -->
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/Vocab"/>
+    </telecom>
+  </contact>
+  <description value="TBD TBD TBD
+
+It provides background and context for the Tinkar Standardized Terminology Knowledgebase Reference Model and its native representation to enable lossless knowledge assets in various formats.
+
+In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1—an informative document outlining the requirements for managing terminology across diverse healthcare organizations. This document emphasized the need for a robust terminology foundation, supporting extensions for various informatics systems. It introduced a self-describing logical model for terminology knowledge bases, specifically designed to represent standard terminology modules such as SNOMED CT Releases, value sets, coding systems, local terms, and equivalence mappings. The logical model comprehensively captured internal semantics, concept details, detailed relationships between terms, and hierarchies of standard terminology modules. The foundation for a standard-based Terminology Knowledge Architecture (Tinkar) specification was articulated to facilitate knowledge management for terminology among vendors, providers, and standards development organizations, including Health Level Seven International (HL7)."/>
+  <jurisdiction>
+    <!-- This first repetition will drive SNOMED release used -->
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <!-- This is the code for universal -->
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.xprod.uv.tinkar"/>
+  <license value="CC0-1.0"/>
+  <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
+  <fhirVersion value="4.0.1"/>
+  <!--dependsOn id="terminology">
+      <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology#5.5.0"/>
+      <packageId value="hl7.terminology.r4"/>
+      <version value="5.5.0"/>
+  </dependsOn-->
+  <definition>
+    <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
+      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+    <page>
+      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="TerminologyDistribution.html"/>
+        <title value="Terminology Distribution"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="FhirLimitations.html"/>
+        <title value="FHIR Limitiations"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="ChangeSetUseCase.html"/>
+        <title value="Change Set Exchange"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="TinkarBackground.html"/>
+        <title value="Tinkar Background"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="TinkarOverview.html"/>
+        <title value="Tinkar Overview"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="TinkarModelConcepts.html"/>
+        <title value="Tinkar Model Concepts"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="TinkarBusinessRequirements.html"/>
+        <title value="Tinkar Business Requirements"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="protobufbackground.html"/>
+        <title value="Protobuf Native Representation"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <!-- copyright year is a mandatory parameter -->
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2024+"/>
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="STU1"/>
+    </parameter>
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input\history"/>
+    </parameter>
+    <parameter>
+      <code value="path-binary"/>
+      <value value="input\cql"/>
+    </parameter>
+    <parameter>
+      <code value="path-liquid"/>
+      <value value="templates\liquid"/>
+    </parameter>
+    <parameter>
+      <code value="shownav"/>
+      <value value="true"/>
+    </parameter>
+<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+    <parameter>
+      <code value="excludexml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludejson"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludettl"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludemap"/>
+      <value value="true"/>
+    </parameter>-->
+  </definition>
+</ImplementationGuide>

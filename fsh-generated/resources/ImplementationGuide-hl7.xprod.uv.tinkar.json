@@ -1,0 +1,144 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.xprod.uv.tinkar",
+  "url": "http://hl7.org/xprod/ig/uv/tinkar/ImplementationGuide/hl7.xprod.uv.tinkar",
+  "version": "2.0.0",
+  "name": "CrossParadigmTinkar",
+  "title": "HL7 Logical Model: Standardized Terminology Knowledgebase, Edition 2",
+  "status": "draft",
+  "publisher": "HL7 Terminology Infrastruture Work Group",
+  "contact": [
+    {
+      "name": "HL7 Terminology Infrastruture Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.hl7.org/Special/committees/vocab"
+        },
+        {
+          "system": "email",
+          "value": "ti@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "HL7 Logical Model: Standardized Terminology Knowledgebase, Edition 2",
+  "packageId": "hl7.xprod.uv.tinkar",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "definition": {
+    "resource": [],
+    "page": {
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "title": "Home",
+          "generation": "html",
+          "name": "index.html",
+          "sourceUrl": "index.html"
+        },
+        {
+          "title": "Terminology Distribution",
+          "generation": "html",
+          "name": "TerminologyDistribution.html",
+          "sourceUrl": "TerminologyDistribution.html"
+        },
+        {
+          "title": "FHIR Limitations",
+          "generation": "html",
+          "name": "FhirLimitations.html",
+          "sourceUrl": "FhirLimitations.html"
+        },
+        {
+          "title": "Change Set Exchange",
+          "generation": "html",
+          "name": "ChangeSetUseCase.html",
+          "sourceUrl": "ChangeSetUseCase.html"
+        },
+        {
+          "title": "Tinkar Background",
+          "generation": "html",
+          "name": "TinkarBackground.html",
+          "sourceUrl": "TinkarBackground.html"
+        },
+        {
+          "title": "Tinkar Overview",
+          "generation": "html",
+          "name": "TinkarOverview.html",
+          "sourceUrl": "TinkarOverview.html"
+        },
+        {
+          "title": "Tinkar Model Concepts",
+          "generation": "html",
+          "name": "TinkarModelConcepts.html",
+          "sourceUrl": "TinkarModelConcepts.html"
+        },
+        {
+          "title": "Tinkar Business Requirements",
+          "generation": "html",
+          "name": "TinkarBusinessRequirements.html",
+          "sourceUrl": "TinkarBusinessRequirements.html"
+        },
+        {
+          "title": "Protobuf Native Representation",
+          "generation": "html",
+          "name": "protobufbackground.html",
+          "sourceUrl": "protobufbackground.html"
+        },
+        {
+          "title": "Useful Downloads",
+          "generation": "html",
+          "name": "downloads.html",
+          "sourceUrl": "downloads.html"
+        },
+        {
+          "title": "IG Change History",
+          "generation": "html",
+          "name": "changes.html",
+          "sourceUrl": "changes.html"
+        }
+      ],
+      "name": "toc.html",
+      "sourceUrl": "toc.html"
+    },
+    "parameter": [
+      {
+        "code": {
+          "code": "copyrightyear",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "2025+"
+      },
+      {
+        "code": {
+          "code": "releaselabel",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "draft"
+      },
+      {
+        "code": {
+          "code": "shownav",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "true"
+      },
+      {
+        "code": {
+          "code": "jira-code",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "OTHER-stterm-kb"
+      },
+      {
+        "code": {
+          "code": "path-history",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://hl7.org/xprod/ig/uv/tinkar/history.html"
+      }
+    ]
+  }
+}
